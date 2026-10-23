@@ -1,4 +1,9 @@
-<a href="https://korinnagladhill.com"><img src="images/banniere.png" width="100%" alt="Korinna Gladhill, développeuse de solutions IA, web et design. Visiter mon portfolio."></a>
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/titre-principal-sombre.png">
+    <img src="images/titre-principal.png" width="691" alt="Korinna Gladhill, développeuse de solutions IA, web et design">
+  </picture>
+</p>
 
 <p>
   <a href="https://korinnagladhill.com"><img src="images/bouton-portfolio.png" height="45" alt="Visiter mon portfolio"></a>

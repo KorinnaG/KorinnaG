@@ -48,8 +48,8 @@ ${police('Rubik Mono One', 400, 'rubik-mono-one-400-normal-latin.woff2')}
   --encre: #000000;
   --primaire: #ff4941;
   --mi: #89023e;
+  --mi-clair: #d6246e;
   --rayon: 10px;
-  --gouttiere: 31.68px;
   --sans: 'Noto Sans', sans-serif;
   --titres: 'Manrope', 'Noto Sans', sans-serif;
   --mono: 'Rubik Mono One', 'Noto Sans', sans-serif;
@@ -60,21 +60,21 @@ body { font-family: var(--sans); color: var(--noir); -webkit-font-smoothing: ant
 .souligne { position: relative; display: inline-block; }
 .trait { position: absolute; left: 0; top: calc(100% + 2px); width: 100%; height: 16px; overflow: visible; }
 
-/* Bannière : héros de l'accueil (06-accueil.css) à 1440 px, photo de 680 × 628
-   centrée entre le bas de l'en-tête (81 px) et le bas de la bannière. */
-.banniere { --haut-photo: 121.5px; --hauteur: 790px; position: relative; width: 1440px; height: var(--hauteur); background: var(--blanc); border-radius: 16px; overflow: hidden; }
-.banniere__logo { position: absolute; top: calc(14px + (67px - 34px) / 2); left: calc(var(--gouttiere) + 22px); }
-.banniere__logo svg { display: block; width: auto; height: 34px; }
-.banniere__credit { position: absolute; margin: 0; right: var(--gouttiere); bottom: calc(var(--hauteur) - var(--haut-photo) + 10px); font: 600 13px/1.4 var(--titres); letter-spacing: 0.11em; text-transform: uppercase; color: color-mix(in srgb, var(--noir) 72%, transparent); }
-.banniere__photo { position: absolute; top: var(--haut-photo); right: var(--gouttiere); width: 680px; height: 628px; border-radius: var(--rayon); overflow: hidden; }
-.banniere__photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
-.banniere__nom { position: absolute; margin: 0; top: calc(var(--haut-photo) + 256px); left: var(--gouttiere); font: 700 150px/119px var(--sans); }
-.banniere__prenom, .banniere__famille { display: block; }
-.banniere__prenom { color: var(--primaire); }
-.banniere__famille { color: var(--mi); margin-top: 41px; padding-left: 7px; }
-.banniere__role { position: absolute; margin: 0; top: calc(var(--haut-photo) + 568px); left: var(--gouttiere); right: var(--gouttiere); font: 600 40px/1.25 var(--titres); letter-spacing: 0.11em; text-transform: uppercase; isolation: isolate; }
-.banniere__role-texte { position: relative; display: inline-block; }
-.banniere__role-texte::before { content: ''; position: absolute; z-index: -1; top: -33px; bottom: -32px; left: 0; width: calc(100% + 40px); background: var(--blanc); border-radius: 0 var(--rayon) 0 0; }
+/* Titre du site : nom bicolore et sous-titre souligné du héros de l'accueil
+   (06-accueil.css), sans photo ni logo ; même écart de 33 px entre le nom et
+   le sous-titre. Les marges laissent la place au trait dessiné, qui déborde
+   sous le sous-titre et à droite des mots. */
+.principal { display: inline-block; padding: 4px 16px 20px 0; }
+.principal__nom { margin: 0; font: 700 150px/119px var(--sans); }
+.principal__prenom, .principal__famille { display: block; }
+.principal__prenom { color: var(--primaire); }
+.principal__famille { margin-top: 41px; padding-left: 7px; }
+.principal__role { margin: 33px 0 0; font: 600 40px/1.25 var(--titres); letter-spacing: 0.11em; text-transform: uppercase; white-space: nowrap; }
+/* Thème sombre de GitHub : le bordeaux éclairci du site sur fond sombre (« mi-clair »). */
+.principal--clair { color: var(--noir); }
+.principal--clair .principal__famille { color: var(--mi); }
+.principal--sombre { color: var(--blanc); }
+.principal--sombre .principal__famille { color: var(--mi-clair); }
 
 /* Bouton (composant Figma « Bouton », 05-composants.css). */
 .btn { display: inline-flex; align-items: flex-end; background: var(--primaire); color: var(--blanc); border-radius: 58px; }
@@ -99,18 +99,14 @@ body { font-family: var(--sans); color: var(--noir); -webkit-font-smoothing: ant
 
   const page = (corps) => `<!doctype html><html lang="fr"><head><meta charset="utf-8"><style>${css}</style></head><body>${corps}</body></html>`;
 
-  const { hero } = site.accueil;
-  const banniere = {
-    nom: 'banniere',
-    echelle: 1.25,
-    html: page(`<div id="rendu" class="banniere">
-  <span class="banniere__logo">${icone('logo-kg')}</span>
-  <p class="banniere__credit">${esc(hero.credit)}</p>
-  <div class="banniere__photo"><img src="${url('images', hero.image)}" alt=""></div>
-  <h1 class="banniere__nom"><span class="banniere__prenom">${esc(site.prenom)}</span><span class="banniere__famille">${esc(site.nomFamille)}</span></h1>
-  <p class="banniere__role"><span class="banniere__role-texte">${riche(hero.sousTitre)}</span></p>
+  const principal = ['clair', 'sombre'].map((theme) => ({
+    nom: theme === 'clair' ? 'titre-principal' : 'titre-principal-sombre',
+    echelle: 2,
+    html: page(`<div id="rendu" class="principal principal--${theme}">
+  <h1 class="principal__nom"><span class="principal__prenom">${esc(site.prenom)}</span><span class="principal__famille">${esc(site.nomFamille)}</span></h1>
+  <p class="principal__role">${riche(site.accueil.hero.sousTitre)}</p>
 </div>`),
-  };
+  }));
 
   const cercle = icone('cercle-fleche');
   const boutons = Object.entries({
@@ -152,5 +148,5 @@ body { font-family: var(--sans); color: var(--noir); -webkit-font-smoothing: ant
 </div>`),
   }));
 
-  return [banniere, ...boutons, adresse, ...titres, ...cartes];
+  return [...principal, ...boutons, adresse, ...titres, ...cartes];
 }

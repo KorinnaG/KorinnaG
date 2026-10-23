@@ -1,5 +1,6 @@
 /**
- * Génère les images du README (bannière, boutons, titres, cartes de projets)
+ * Génère les images du README (titre du site, boutons, titres de section,
+ * cartes de projets)
  * à partir du portfolio : contenus et adresse du site (src/content/,
  * src/config.js), polices, icônes et photos (src/assets/). Pilote Chrome sans
  * interface par le protocole DevTools, sans dépendance, comme
