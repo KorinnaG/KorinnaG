@@ -68,6 +68,6 @@ Si c’est toi, je serai **ravie** de faire ta connaissance !
 
 <p><a href="https://korinnagladhill.com/contact/"><img src="images/bouton-contact.png" height="45" alt="Me contacter"></a></p>
 
-[Courriel](mailto:korinna.gladhill@gmail.com) · [LinkedIn](https://www.linkedin.com/in/korinna-gladhill-36a22a247/) · [Behance](https://www.behance.net/korinna_gladhill) · [Instagram](https://www.instagram.com/annirok8/) · [Réserver un appel](https://cal.com/korinna-gladhill-9ticwo) · [Mon CV](https://korinnagladhill.com/documents/cv-korinna-gladhill.pdf)
+[Courriel](mailto:korinna.gladhill@gmail.com) · [LinkedIn](https://www.linkedin.com/in/korinna-gladhill-36a22a247/) · [GitHub](https://github.com/KorinnaG) · [Instagram](https://www.instagram.com/annirok8/) · [YouTube](https://www.youtube.com/@Korinna-g3t) · [Mon CV](https://korinnagladhill.com/documents/cv-korinna-gladhill.pdf)
 
 <!-- Images générées à partir du portfolio (contenus, polices, couleurs) : node source/generer.mjs -->
