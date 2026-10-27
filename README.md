@@ -31,10 +31,10 @@ Je conçois des **outils** sur mesure et des **visuels** soignés qui simplifien
 </h3>
 
 <p><a href="https://korinnagladhill.com/projets/hibakes/"><img src="images/projet-hibakes.png" width="100%" alt="Projet Hibakes, site web d’une boulangerie en ligne : tarte aux fruits garnie de pêches, de mûres, de fraises et de crème."></a></p>
-<p><a href="https://korinnagladhill.com/projets/goals/"><img src="images/projet-goals.png" width="100%" alt="Projet Goals, application web d’organisation assistée par l’IA : coureuse sur une route au coucher du soleil."></a></p>
-<p><a href="https://korinnagladhill.com/projets/librairie-icitte/"><img src="images/projet-librairie-icitte.png" width="100%" alt="Projet Librairie Icitte, site web d’une librairie de Longueuil : rayonnages remplis de livres neufs et d’occasion à l’intérieur de la librairie."></a></p>
-<p><a href="https://korinnagladhill.com/projets/cafe-lux/"><img src="images/projet-cafe-lux.png" width="100%" alt="Projet Café Lux, affiches numériques pour un café de Granby : trois boissons fruitées glacées sur le comptoir du café."></a></p>
 <p><a href="https://korinnagladhill.com/projets/satellite/"><img src="images/projet-satellite.png" width="100%" alt="Projet Satellite, design du site d’un produit audio fictif : casques et écouteurs Satellite posés sur des socles blancs."></a></p>
+<p><a href="https://korinnagladhill.com/projets/cafe-lux/"><img src="images/projet-cafe-lux.png" width="100%" alt="Projet Café Lux, campagne publicitaire pour un café de Granby : trois boissons fruitées glacées sur le comptoir du café."></a></p>
+<p><a href="https://korinnagladhill.com/projets/sat/"><img src="images/projet-sat.png" width="100%" alt="Projet SAT, affiches pour le Service d’accueil et de transition : affiche « Tous les lundis, B-18, café gratuit », avec un latte dans une tasse bleue."></a></p>
+<p><a href="https://korinnagladhill.com/projets/goals/"><img src="images/projet-goals.png" width="100%" alt="Projet Goals, application web d’organisation assistée par l’IA : coureuse sur une route au coucher du soleil."></a></p>
 
 <p><a href="https://korinnagladhill.com/projets/"><img src="images/bouton-projets.png" height="45" alt="Voir tous mes projets"></a></p>
 
