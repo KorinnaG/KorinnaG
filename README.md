@@ -63,7 +63,7 @@ C’est ce template qui encadre le développement de mon portfolio.
   </picture>
 </h3>
 
-Je suis à la recherche d’une équipe innovatrice qui veut accueillir une **stagiaire** motivée en **développement web** ou bien en développement de **solutions IA**, du 29 mars au 27 mai 2027.
+Je suis à la recherche d’une équipe innovatrice qui veut accueillir une **stagiaire** motivée en **développement web** ou bien en développement de **solutions IA**, du 29 mars au 20 mai 2027.
 
 Si c’est toi, je serai **ravie** de faire ta connaissance !
 
